@@ -1,0 +1,20 @@
+{
+  "name": "xss-lang",
+  "version": "0.1.0",
+  "homepage": "https://github.com/customcommander/xss-lang",
+  "author": "Julien Gonzalez <hello@spinjs.com>",
+  "main": "src/index.js",
+  "files": [
+    "src/",
+    "!src/grammar.ne"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "moo": "^0.5.1",
+    "nearley": "^2.19.5"
+  },
+  "devDependencies": {
+    "cucumber": "^6.0.5",
+    "puppeteer-core": "5.0.0"
+  }
+}

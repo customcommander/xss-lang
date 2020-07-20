@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  xss-lang:
+    image: customcommander/tagtical
+    volumes:
+      - .:/workspace
+    tty: true
+    stdin_open: true
+    depends_on:
+      - chrome
+  chrome:
+    image: browserless/chrome:1-puppeteer-5.0.0
+    environment:
+      - MAX_CONCURRENT_SESSIONS=10
+    ports:
+      - "3000:3000"

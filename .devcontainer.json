@@ -1,0 +1,7 @@
+{
+  "name": "xss-lang",
+  "dockerComposeFile": "./docker-compose.yml",
+  "service": "xss-lang",
+  "workspaceFolder": "/workspace",
+  "postCreateCommand": "yarn"
+}
