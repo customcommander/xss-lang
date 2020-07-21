@@ -9,7 +9,7 @@ xss ->
 
 none ->
   %any
-  {% ([any]) => ({ threat: 'none' }) %}
+  {% () => ({ threat: 'none' }) %}
 
 js_url ->
   %js_protocol %any
