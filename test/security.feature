@@ -20,3 +20,4 @@ Scenario Outline: XSS via href attribute and JavaScript URLs
   Examples:
     | untrusted_data           |
     | javascript:alert('XSS!') |
+    | JAVAscriPT:alert('XSS!') |
