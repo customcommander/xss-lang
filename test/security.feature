@@ -18,6 +18,10 @@ Scenario Outline: XSS via href attribute and JavaScript URLs
   Then I will see that it was dodgy
 
   Examples:
-    | untrusted_data           |
-    | javascript:alert('XSS!') |
-    | JAVAscriPT:alert('XSS!') |
+    | untrusted_data                                                             |
+    | javascript:alert('XSS!')                                                   |
+    | JAVAscriPT:alert('XSS!')                                                   |
+    | &#x6a;&#x61;&#x76;&#x61;&#x73;&#x63;&#x72;&#x69;&#x70;&#x74;:alert('XSS!') |
+    | &#X6A;&#X61;&#X76;&#X61;&#X73;&#X63;&#X72;&#X69;&#X70;&#X74;:alert('XSS!') |
+    | &#X6A&#X61&#X76&#X61&#X73&#X63&#X72&#X69&#X70&#X74:alert('XSS!')           |
+    | &#x6A;&#X61&#x76;&#X61&#X73;&#X63&#X72&#x69;&#X70&#x74:alert('XSS!')       |

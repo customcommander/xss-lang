@@ -7,15 +7,15 @@ const moo = require('moo');
   We then build the final regex by joining them altogether.
   Note: moo doesnt' support the "i" flag for regex!
 */
-const j = '(?:j|J)';
-const a = '(?:a|A)';
-const v = '(?:v|V)';
-const s = '(?:s|S)';
-const c = '(?:c|C)';
-const r = '(?:r|R)';
-const i = '(?:i|I)';
-const p = '(?:p|P)';
-const t = '(?:t|T)';
+const j = '(?:[jJ]|&#[xX]6[aA];?)';
+const a = '(?:[aA]|&#[xX]61;?)';
+const v = '(?:[vV]|&#[xX]76;?)';
+const s = '(?:[sS]|&#[xX]73;?)';
+const c = '(?:[cC]|&#[xX]63;?)';
+const r = '(?:[rR]|&#[xX]72;?)';
+const i = '(?:[iI]|&#[xX]69;?)';
+const p = '(?:[pP]|&#[xX]70;?)';
+const t = '(?:[tT]|&#[xX]74;?)';
 const proto_end = ':';
 
 module.exports =
