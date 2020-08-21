@@ -21,10 +21,10 @@ const ws = '(?:&#13;?)*'; // whitespaces
 
 module.exports =
   moo.compile
-  ( { js_protocol:
-        { match: new RegExp(j+ws+a+ws+v+ws+a+ws+s+ws+c+ws+r+ws+i+ws+p+ws+t+ws+proto_end)
-        , value: () => 'javascript:'
-        }
-    , any: /.+/
-    }
-  );
+    ( { js_protocol:
+          { match: new RegExp(j+ws+a+ws+v+ws+a+ws+s+ws+c+ws+r+ws+i+ws+p+ws+t+ws+proto_end)
+          , value: () => 'javascript:'
+          }
+      , any: /.+/
+      }
+    );
