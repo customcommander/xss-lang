@@ -17,11 +17,12 @@ const i = '(?:[iI]|&#[xX]69;?)';
 const p = '(?:[pP]|&#[xX]70;?)';
 const t = '(?:[tT]|&#[xX]74;?)';
 const proto_end = ':';
+const ws = '(?:&#13;?)*'; // whitespaces
 
 module.exports =
   moo.compile
   ( { js_protocol:
-        { match: new RegExp(j+a+v+a+s+c+r+i+p+t+proto_end)
+        { match: new RegExp(j+ws+a+ws+v+ws+a+ws+s+ws+c+ws+r+ws+i+ws+p+ws+t+ws+proto_end)
         , value: () => 'javascript:'
         }
     , any: /.+/

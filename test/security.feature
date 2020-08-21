@@ -25,3 +25,5 @@ Scenario Outline: XSS via href attribute and JavaScript URLs
     | &#X6A;&#X61;&#X76;&#X61;&#X73;&#X63;&#X72;&#X69;&#X70;&#X74;:alert('XSS!') |
     | &#X6A&#X61&#X76&#X61&#X73&#X63&#X72&#X69&#X70&#X74:alert('XSS!')           |
     | &#x6A;&#X61&#x76;&#X61&#X73;&#X63&#X72&#x69;&#X70&#x74:alert('XSS!')       |
+    | j&#13;a&#13;v&#13;a&#13;s&#13;c&#13;r&#13;i&#13;p&#13;t:alert('XSS!')      |
+    | j&#13a&#13v&#13a&#13s&#13c&#13r&#13i&#13p&#13t&#13;:alert('XSS!')          |
