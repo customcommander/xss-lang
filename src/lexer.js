@@ -5,7 +5,6 @@ const moo = require('moo');
 /*
   Building individual regexes as strings to make it easier to the eye.
   We then build the final regex by joining them altogether.
-  Note: moo doesnt' support the "i" flag for regex!
 */
 const j = '(?:[jJ]|&#[xX]6[aA];?)';
 const a = '(?:[aA]|&#[xX]61;?)';
@@ -20,6 +19,7 @@ const proto_end = ':';
 const ws = '(?:&#13;?)*'; // whitespaces
 
 module.exports =
+  // remember that `moo` doesn't support the `i` flag for regular expression!
   moo.compile
     ( { js_protocol:
           { match: new RegExp(j+ws+a+ws+v+ws+a+ws+s+ws+c+ws+r+ws+i+ws+p+ws+t+ws+proto_end)
