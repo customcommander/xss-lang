@@ -8,7 +8,7 @@ function id(x) { return x[0]; }
     {"name": "xss$subexpression$1", "symbols": ["js_url"]},
     {"name": "xss$subexpression$1", "symbols": ["none"]},
     {"name": "xss", "symbols": ["xss$subexpression$1"], "postprocess": ([[found]]) => found},
-    {"name": "none", "symbols": [(lexer.has("any") ? {type: "any"} : any)], "postprocess": ([any]) => ({ threat: 'none' })},
+    {"name": "none", "symbols": [(lexer.has("any") ? {type: "any"} : any)], "postprocess": () => ({ threat: 'none' })},
     {"name": "js_url", "symbols": [(lexer.has("js_protocol") ? {type: "js_protocol"} : js_protocol), (lexer.has("any") ? {type: "any"} : any)], "postprocess":  ([protocol, js]) => ({ threat: 'js_url'
         , found: protocol.value + js.value
         , raw: protocol.text + js.text
