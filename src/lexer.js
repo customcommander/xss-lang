@@ -5,7 +5,7 @@ const moo = require('moo');
 module.exports =
   moo.compile
   ( { js_protocol:
-        { match: /[jJ][aA][vV][aA][sS][cC][rR][iI][pP][tT][:]/
+        { match: /[jJ][aA][vV][aA][sS][cC][rR][iI][pP][tT]:/
         , value: () => 'javascript:'
         }
     , any: /.+/
