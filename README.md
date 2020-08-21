@@ -28,7 +28,7 @@ With this parser I wanted to understand the different threats a web application 
 
 ### Example
 
-Say we need to create a function that  links to the DOM:
+Say we need to create a function that adds links to a page:
 
 ```javascript
 function add_link(link) {
@@ -38,7 +38,7 @@ function add_link(link) {
 }
 ```
 
-To add a link to the page we simply need to call the function as such:
+To add a link to a page we simply need to call the function as such:
 
 ```javascript
 add_link("https://example.com");
