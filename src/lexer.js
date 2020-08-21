@@ -16,7 +16,7 @@ const i = '(?:[iI]|&#[xX]69;?)';
 const p = '(?:[pP]|&#[xX]70;?)';
 const t = '(?:[tT]|&#[xX]74;?)';
 const proto_end = ':';
-const ws = '(?:&#13;?)*'; // whitespaces
+const ws = '(?:&#13;?|&#0+9;?)*'; // whitespaces
 
 module.exports =
   // remember that `moo` doesn't support the `i` flag for regular expression!
