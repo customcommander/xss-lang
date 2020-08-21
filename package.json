@@ -16,5 +16,8 @@
   "devDependencies": {
     "cucumber": "^6.0.5",
     "puppeteer-core": "5.0.0"
+  },
+  "scripts": {
+    "e2e-tests": "cucumber-js test/security.feature"
   }
 }
