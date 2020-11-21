@@ -17,4 +17,4 @@ defineStep('my code injects this HTML into the application', steps.inject_html);
 defineStep('the user clicks the {word} link', steps.click_id);
 defineStep('they will see the message {string}', steps.assert_dialog_message);
 defineStep('I scan the untrusted data for potential threats', steps.threat_scan);
-defineStep('I will see that it was dodgy', steps.assert_positive_threat);
+defineStep('the {string} threat is detected', steps.assert_threat);

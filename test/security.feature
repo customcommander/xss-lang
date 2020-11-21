@@ -15,7 +15,7 @@ Scenario Outline: XSS via href attribute and JavaScript URLs
   When the user clicks the dodgy link
   Then they will see the message "XSS!"
   When I scan the untrusted data for potential threats
-  Then I will see that it was dodgy
+  Then the "js_url" threat is detected
 
   Examples:
     | untrusted_data                                                             |
