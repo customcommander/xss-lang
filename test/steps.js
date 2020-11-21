@@ -28,6 +28,7 @@ module.exports.threat_scan = function () {
   this.scan_result = scan(this.untrusted_data);
 };
 
-module.exports.assert_positive_threat = function () {
-  assert(this.scan_result !== false);
+module.exports.assert_threat = function (threat) {
+  assert(this.scan_result !== false, `Expected a threat but none was detected.`);
+  assert(this.scan_result.threat === threat, `Expected threat '${threat} but got '${this.scan_result.threat}' instead.`);
 };
